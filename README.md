@@ -45,7 +45,7 @@ import java.io.IOException;
 public class FileIOMain {
     public static void main(String[] args) {
         File file = new File("simple.txt");
-        String output = "example of writing to a file";
+        String output = "example of writing to a file.";
 
          try (FileOutputStream fileOutputStream = new FileOutputStream(file)) {
             fileOutputStream.write(output.getBytes());
